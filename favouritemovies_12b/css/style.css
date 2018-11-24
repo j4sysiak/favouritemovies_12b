@@ -1,0 +1,498 @@
+* {
+   font-family: sans-serif;
+   font-size: 16px;
+}
+
+header {
+   height: 50px;
+   border-bottom: 1px solid gray;
+   background-color: #F1F1F1;
+}
+
+header h1 {
+   font-size: 1.5em;
+   font-weight: bold;
+   margin-left: 50px;
+   line-height: 50px;
+}
+
+.select_users {
+    position: absolute;
+    right: 65px;
+    top: 15px;
+}
+
+.select_users h2 a {
+   font-weight: bold;
+   font-size: 0.9em;
+   color: black;
+   text-decoration: none;
+}
+
+.select_users h2 a:hover {
+   color: #A32824;
+}
+
+ul.users_menu, ul.admin_menu {
+    position: absolute;
+    right: 0;
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+    background-color: #F1F1F1;
+}
+
+ul.users_menu {
+   width: 200px;
+}
+
+ul.admin_menu {
+   width: 150px;
+}
+
+ul.users_menu a, ul.admin_menu a {
+   text-decoration: none;
+   color: black;
+} 
+
+.users_menu li a, .admin_menu li a  {
+   font-size: 0.75em;
+   padding: 5px;
+   display: block;
+}
+
+ul.users_menu li a:hover, .admin_menu li a:hover {
+   background-color: #A32824;
+   color: white;
+}
+
+ul.users_menu li.logout {
+	border-top: 1px solid grey;
+	text-transform: uppercase;
+}
+
+ul.users_menu li.logout a {
+	background-color: white;
+	color: black;
+}
+
+ul.users_menu li.logout a:hover {
+	background-color: black;
+	color: white;
+}
+
+.admin_users, .admin_movies {
+   margin-top: 40px;
+   margin-left: 50px;
+}
+
+.admin_users h2, .admin_movies h2 {
+   font-size: 1.25em;
+   margin-bottom: 20px;
+}
+
+.admin_table {
+   border-spacing: 2px;
+   border-collapse: separate;
+}
+
+.admin_table th {
+   font-weight: bold;
+   text-align: left;
+   background-color: #F1F1F1;
+}
+
+.admin_table th, .admin_table td, .admin_table input {
+   height: 35px;
+   width: 200px;
+}
+
+th.admin_col, td.deletecell, td.insertcell {
+   width: 80px;
+}
+
+.admin_table th, .admin_table input {
+   padding-left: 5px;
+   padding-right: 5px;
+}
+
+.admin_table input {
+   font-size: 0.9em;
+}
+
+.admin_table input:focus {
+   background-color: #FEE5AC;
+}
+
+.admin_table th, .admin_table td {
+   border: 1px solid black;
+}
+
+input {
+   outline: none;
+   border: none;
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+.favs_list {
+    float: left;
+    width: 175px;
+    margin-left: 45px;
+}
+
+.favs_list h2 {
+   font-size: 0.8em;
+   font-weight: bold;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   margin-left: 5px;
+}
+
+
+ul.favs {
+    width: 170px;
+    
+}
+
+ul.favs li a {
+   display: block;
+   font-size: 0.75em;
+   text-decoration: none;
+   color: black;
+   padding: 7px 5px 7px 5px;
+}
+
+ul.favs li a:hover {
+   color: white;
+   background-color: #A32824;
+}
+
+.movie_list, .movie_single {
+   margin-top: 15px;
+   margin-left: 225px;
+   width: 610px;
+   border: 1px dotted gray;
+}
+
+.movie_list {
+   padding-top: 10px;
+}
+
+.welcome {
+   font-size: 0.8em;
+   text-align: justify;
+   padding: 10px 10px 20px 10px;
+   border-bottom: 1px dotted gray;
+}
+
+.movie_list h2, .movie_single h2 {
+   font-size: 1.3em;
+   padding: 5px 10px 10px 10px;
+}
+
+.movie_list ul {
+   padding-top: 20px;
+}
+
+.movie_list li {
+   padding-bottom: 10px;
+}
+
+.movie_list h3 a {
+   font-size: 1.1em;
+   color: #438BC5;
+   font-weight: bold;
+   display: inline-block;
+   margin-top: 0.5em;
+   margin-bottom: 0.5em;
+   text-decoration: none;
+}
+
+.movie_list h3 a:hover {
+   text-decoration: underline;
+}
+
+
+.thumbnail {
+    width: 178px;
+    height: 100px;
+}
+
+.movie_list figcaption {
+   display: inline-block;
+   vertical-align: top;
+   padding-left: 20px;
+}
+
+.movie_list .description {
+   font-size: 0.75em;
+   width: 400px;
+   text-align: justify;
+   padding-right: 10px;
+}
+
+.movie_player {
+   width: 608px;
+   height: 344px;
+}
+
+.movie_single h3 {
+   font-size: 1.3em;
+   padding: 10px;
+}
+
+.movie_single p {
+   font-size: 0.8em;
+   padding: 10px;
+}
+
+.movie_single .description {
+   font-size: 0.75em;
+   min-height: 80px;
+   text-align: justify;
+}
+
+.actions {
+   position: relative;
+   height: 37px;
+   border-bottom: 1px solid #CCC;
+}
+
+.actions .add_remove {
+   position: absolute;
+   right: 10px;
+}
+
+.actions .add_remove p {
+   font-size: 0.75em;
+   font-weight: bold;
+   color: #999;
+}
+
+.actions .add_remove p:hover {
+   color: black;
+   border-bottom: 3px solid #993300;
+}
+
+.profile, .admin_button, .trash, .favourite, .admin_table .delete, .admin_table .insert, .success {
+	background-image: url(../images/sprites.png);
+	background-repeat: no-repeat;
+}
+
+.profile {
+	position: absolute;
+	right: 25px;
+	top: 10px;
+	background-position: -100px -199px ;
+	width: 30px;
+	height: 30px;	
+}
+
+.profile.logged_in {
+	background-position: -33px -199px ;
+}
+
+.profile.logged_out{
+	background-position: 0 -199px ;	
+}
+
+.admin_button {
+	position: absolute;
+	right: 10px;
+	top: 20px;
+	height: 10px;
+	width: 10px;
+}
+
+.admin_button {
+	background-position: -47px -132px ;
+}
+
+.admin_button:hover {
+	background-position: -47px -142px ;
+}
+
+.trash {
+	margin: 30px 0 30px 0;
+	padding-top: 20px;
+	background-position: 0 0;	
+	width: 60px;
+	height: 60px;
+}
+
+.trash:hover, .trash_hover {
+	background-position: 0 -61px ;
+}
+
+.favourite {
+	background-position: 0 -154px ;
+	width: 20px;
+	height: 20px;
+}
+
+.favourite:hover {
+	background-position: -21px -154px ;
+}
+
+.movie_list li {
+	position: relative;
+}
+
+.non_favs .add {
+	position: absolute;
+	top: 10px;
+	right: 30px;
+}
+
+.delete {
+	background-position: 0 -130px ;
+	margin-left: 40px;
+	width: 20px;
+	height: 20px;
+}
+
+.delete:hover {
+	background-position: -21px -130px;
+}
+
+.admin_table .description {
+   width: 700px;
+}
+
+.insert{
+	background-position: 0 -177px;
+	margin-left: 40px;	
+	width: 20px;
+	height: 20px;
+}
+
+.insert:hover {
+	background-position: -21px -177px;
+}
+
+.success {
+   background-position: -42px -177px;
+}
+
+.admin_table .success {
+	margin-left: 40px;
+	width: 40px;
+	height: 20px;
+}
+
+.non_favs .success {
+	width: 20px;
+	height: 20px;
+}
+
+.favs .highlight {
+   background-color: orange;
+   border: 1px solid red;
+}
+
+footer {
+    clear: both;
+    height: 60px;
+    background-color: #EBEBEB;
+    border-top: 1px dotted gray;
+    border-bottom: 1px dotted gray;
+    margin-top: 30px;
+}
+
+footer p {
+   line-height: 60px;
+   margin-left: 50px;
+   font-size: 0.7em;
+   font-weight: bold;
+}
+
+
+footer a {
+   font-size: inherit;
+   color: black;
+}
+
+footer a:hover {
+   color: #A32824;
+}
+
+.alert {
+   color: red;
+}
+
+.message {
+   margin-top: 40px;
+   margin-left: 50px;
+}
+
+.message h2 {
+   font-size: 1.25em;
+   font-weight: bold;
+}
+
+.hidden {
+   display: none;
+}
+
+.no_border_bottom {
+   border-bottom: none;
+}
+
+.like_none:after {
+   content: "You haven't got any favourite movies yet! Mouse over the movies and click on the heart icon to add them to the list on the left.";
+}
+
+.like_some:after {
+   content: "Here are some movies you might like. Click on the heart icon to add them to your favourites list.";
+}
+
+.like_all:after {
+   content: "It looks like you love all the movies! Drag them to the trash can to delete them from your favourites.";
+}
+
+.loader_large {
+   background-image: url('../images/loader-large.png');
+   position: absolute;
+   left: 500px;
+   top: 430px;
+   height: 50px;
+   width: 50px;
+}
+
+.loader_small {
+   background-image: url('../images/loader-small.png');
+   margin-left: 40px;
+   width: 25px;
+   height: 25px; 
+}
+
+.dim {
+   opacity: 0.5;
+}
+
+.noscript {
+   margin: 20px auto 20px auto;
+   padding: 20px;
+   width: 50%;
+   overflow-y: auto;
+   text-align: center;
+   background-color: #FFEFBE;
+   -webkit-box-shadow: 7px 7px 5px rgba(50,50,50,0.75);
+   -moz-box-shadow: 7px 7px 5px rgba(50,50,50,0.75);
+   box-shadow: 7px 7px 5px rgba(50,50,50,0.75);
+}
+
+noscript h1 {
+   font-size: 1.3em;
+   margin-bottom: 1em;
+}
+
+noscript p {
+   font-size: 0.9em;
+}
+
+.content {
+   display: inline;
+}
